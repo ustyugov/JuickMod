@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.juick" android:versionCode="31" android:versionName="1.72">
-    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="13"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="net.ustyugov.juick" android:versionCode="37" android:versionName="2.1">
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="15"/>    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
@@ -17,9 +16,9 @@
     <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
     <uses-feature android:name="android.hardware.location.network" android:required="false"/>
     <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
-    <application android:icon="@drawable/ic_launcher" android:label="@string/Juick" android:theme="@android:style/Theme.Light">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/Juick">
         <uses-library android:name="com.google.android.maps"/>
-        <activity android:name="com.juick.android.MainActivity" android:theme="@style/Theme.Sherlock.Light" android:configChanges="keyboard|keyboardHidden|orientation">
+        <activity android:name=".activitys.MainActivity" android:configChanges="keyboard|keyboardHidden|orientation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -30,14 +29,14 @@
                 <data android:scheme="http" android:host="juick.com"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.juick.android.MessagesActivity" android:configChanges="keyboard|keyboardHidden|orientation">
+        <activity android:name=".activitys.MessagesActivity" android:configChanges="keyboard|keyboardHidden|orientation">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:mimeType="vnd.android.cursor.item/vnd.com.juick.profile"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.juick.android.NewMessageActivity" android:label="@string/Juick__New_message" android:configChanges="keyboard|keyboardHidden|orientation">
+        <activity android:name=".activitys.NewMessageActivity" android:label="@string/New_message" android:configChanges="keyboard|keyboardHidden|orientation">
             <intent-filter>
                 <action android:name="android.intent.action.SEND"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -47,29 +46,29 @@
                 <data android:mimeType="video/mp4"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.juick.android.ExploreActivity" android:label="@string/Juick__Explore" android:configChanges="keyboard|keyboardHidden|orientation"/>
-        <activity android:name="com.juick.android.ThreadActivity" android:label="" android:configChanges="keyboard|keyboardHidden|orientation"/>
-        <activity android:name="com.juick.android.PlacesActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
-        <activity android:name="com.juick.android.PickPlaceActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
-        <activity android:name="com.juick.android.PlaceEditActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
-        <activity android:name="com.juick.android.SignInActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
-        <activity android:name="com.juick.android.SignUpActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
-        <activity android:name="com.juick.android.PreferencesActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
-        <activity android:name="com.juick.android.TagsActivity" android:label="@string/Tags" android:configChanges="keyboard|keyboardHidden|orientation"/>
-        <activity android:name="com.juick.android.PickLocationActivity" android:label="@string/Pick_a_location" android:configChanges="keyboard|keyboardHidden|orientation"/>
-        <receiver android:name="com.juick.android.OnBootReceiver">
+        <activity android:name=".activitys.ExploreActivity" android:label="@string/Explore" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:name=".activitys.ThreadActivity" android:label="" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:name=".activitys.PlacesActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:name=".activitys.PickPlaceActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:name=".activitys.PlaceEditActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:name=".activitys.SignInActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:name=".activitys.SignUpActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:name=".activitys.PreferencesActivity" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:name=".activitys.TagsActivity" android:label="@string/Tags" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <activity android:name=".activitys.PickLocationActivity" android:label="@string/Pick_a_location" android:configChanges="keyboard|keyboardHidden|orientation"/>
+        <receiver android:name="net.ustyugov.juick.OnBootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="com.juick.android.CheckUpdatesReceiver"></receiver>
-        <service android:name="com.juick.android.AuthenticationService" android:exported="true" android:process=":auth">
+        <receiver android:name="net.ustyugov.juick.CheckUpdatesReceiver"></receiver>
+        <service android:name="net.ustyugov.juick.AuthenticationService" android:exported="true" android:process=":auth">
             <intent-filter>
                 <action android:name="android.accounts.AccountAuthenticator"/>
             </intent-filter>
             <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
         </service>
-        <service android:name="com.juick.android.ContactsSyncService" android:exported="true" android:process=":contacts">
+        <service android:name="net.ustyugov.juick.ContactsSyncService" android:exported="true" android:process=":contacts">
             <intent-filter>
                 <action android:name="android.content.SyncAdapter"/>
             </intent-filter>

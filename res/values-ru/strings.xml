@@ -5,8 +5,8 @@
 
 
 
-    <string name="Loading___">Загрузка...</string>
-    <string name="Please_wait___">Пожалуйста, ждите...</string>
+    <string name="Loading___">Загрузка&#8230;</string>
+    <string name="Please_wait___">Пожалуйста, ждите&#8230;</string>
     <string name="OK">ОК</string>
     <string name="Cancel">Отмена</string>
     <string name="Save">Сохранить</string>
@@ -32,13 +32,13 @@
     <string name="Juick_profile">Профайл в Juick</string>
 
     <!-- Pull-to-refresh -->
-    <string name="pull_to_refresh_pull_label">Тяните, чтобы обновить...</string>
-    <string name="pull_to_refresh_release_label">Отпустите, чтобы обновить...</string>
-    <string name="pull_to_refresh_refreshing_label">Загрузка...</string>
-    <string name="pull_to_refresh_tap_label">Нажмите, чтобы обновить...</string>
+    <string name="pull_to_refresh_pull_label">Тяните, чтобы обновить&#8230;</string>
+    <string name="pull_to_refresh_release_label">Отпустите, чтобы обновить&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">Загрузка&#8230;</string>
+    <string name="pull_to_refresh_tap_label">Нажмите, чтобы обновить&#8230;</string>
 
     <!-- ExploreActivity -->
-    <string name="Juick__Explore">Джуик: Обзор</string>
+    <string name="Explore">Обзор</string>
     <string name="Popular_tags">Популярные теги</string>
     <string name="All_messages">Все сообщения</string>
     <string name="Nearby_places">Места поблизости</string>
@@ -53,9 +53,10 @@
 
     <!-- JuickMessagesAdapter -->
     <string name="Replies_">Ответов:</string>
+    <string name="Reply">Ответить</string>
 
     <!-- NewMessageActivity -->
-    <string name="Juick__New_message">Juick: Новое сообщение</string>
+    <string name="New_message">Новое сообщение</string>
     <string name="To__All">Кому: Всем</string>
     <string name="Attach">Добавить</string>
     <string name="Photo_from_gallery">Фото из галереи</string>
@@ -78,7 +79,7 @@
     <!-- PlacesActivity -->
     <string name="New_place">Новое место</string>
     <string name="Without_name">Без названия</string>
-    <string name="Determining_your_location___">Определение местоположения...</string>
+    <string name="Determining_your_location___">Определение местоположения&#8230;</string>
     <string name="Location_determination_is_disabled">Определение местоположения отключено. Проверьте настройки.</string>
     <string name="Specify_a_location">Указать местоположение</string>
 

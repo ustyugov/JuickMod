@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="@string/Notifications">
-        <ListPreference
-            android:key="refresh"
-            android:title="@string/Refresh_interval"
-            android:entries="@array/prefsRefreshIntervalTitles"
-            android:entryValues="@array/prefsRefreshIntervalValues"
-            android:defaultValue="5"
-            android:persistent="true"/>
-    </PreferenceCategory>
+    <ListPreference
+        android:key="refresh"
+        android:title="@string/Refresh_interval"
+        android:entries="@array/prefsRefreshIntervalTitles"
+        android:entryValues="@array/prefsRefreshIntervalValues"
+        android:defaultValue="5"
+        android:persistent="true"/>
+    <CheckBoxPreference android:key="DarkColors" 
+        android:defaultValue="false"
+        android:title="Dark colors"/>
 <!--    
     <PreferenceCategory android:title="@string/Appearance">
         <ListPreference

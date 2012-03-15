@@ -80,8 +80,8 @@ public class JuickMessage {
 
     public String getTags() {
         String t = new String();
-        for (Enumeration e = tags.elements(); e.hasMoreElements();) {
-            String tag = (String) e.nextElement();
+        for (Enumeration<String> e = tags.elements(); e.hasMoreElements();) {
+            String tag = e.nextElement();
             if (t.length() > 0) {
                 t += ' ';
             }

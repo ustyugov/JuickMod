@@ -13,10 +13,12 @@
         android:gravity="top"
         android:src="@drawable/ic_user_32"/>
 -->
-    <TextView
+    <net.ustyugov.juick.MyTextView
         android:id="@+id/text"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:textColorLink="#FFC8934E"
+        android:linksClickable="true"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
         android:layout_weight="1"
         android:gravity="top"/>
 </LinearLayout>

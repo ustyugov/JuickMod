@@ -1,0 +1,4 @@
+<resources>
+    <color name="actionbar_title_color_light">#000000</color>
+    <color name="actionbar_title_color_dark">#eeeeee</color>
+</resources>

@@ -4,9 +4,9 @@
     <!--<string name="maps_key">0DjDjZPPUT1RBx4LNrOlllz_EVOwnO83nJFq_xA</string>-->
     <string name="com_juick">com.juick</string>
 
-    <string name="Juick">Juick</string>
-    <string name="Loading___">Loading...</string>
-    <string name="Please_wait___">Please wait...</string>
+    <string name="Juick">JuickMod</string>
+    <string name="Loading___">Loading&#8230;</string>
+    <string name="Please_wait___">Please wait&#8230;</string>
     <string name="OK">OK</string>
     <string name="Cancel">Cancel</string>
     <string name="Save">Save</string>
@@ -32,13 +32,13 @@
     <string name="Juick_profile">Juick profile</string>
     
     <!-- Pull-to-refresh -->
-    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
-    <string name="pull_to_refresh_release_label">Release to refresh...</string>
-    <string name="pull_to_refresh_refreshing_label">Loading...</string>
-    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh&#8230;</string>
+    <string name="pull_to_refresh_release_label">Release to refresh&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">Loading&#8230;</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh&#8230;</string>
     
     <!-- ExploreActivity -->
-    <string name="Juick__Explore">Juick: Explore</string>
+    <string name="Explore">Explore</string>
     <string name="Popular_tags">Popular tags</string>
     <string name="All_messages">All messages</string>
     <string name="Nearby_places">Nearby places</string>
@@ -53,9 +53,10 @@
 
     <!-- JuickMessagesAdapter -->
     <string name="Replies_">Replies:</string>
+    <string name="Reply">Reply</string>
 
     <!-- NewMessageActivity -->
-    <string name="Juick__New_message">Juick: New message</string>
+    <string name="New_message">New message</string>
     <string name="To__All">To: All</string>
     <string name="Attach">Attach</string>
     <string name="Photo_from_gallery">Photo from gallery</string>
@@ -78,7 +79,7 @@
     <!-- PlacesActivity -->
     <string name="New_place">New place</string>
     <string name="Without_name">Without name</string>
-    <string name="Determining_your_location___">Determining your location...</string>
+    <string name="Determining_your_location___">Determining your location&#8230;</string>
     <string name="Location_determination_is_disabled">Location determination is disabled. Check settings.</string>
     <string name="Specify_a_location">Specify a location</string>
 
